@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Nob Academy — Courses</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="site">
+    <header class="site-header">
+      <div class="brand">Nob Academy</div>
+      <nav class="main-nav" aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="academics.html">Academics</a>
+        <a href="courses.html" style="text-decoration:underline">Courses</a>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false">☰</button>
+    </header>
+
+    <main>
+      <section class="hero card section-fade">
+        <h1 style="font-family:Merriweather,serif;color:var(--burgundy);margin:0">Courses & Programs</h1>
+        <p class="lead" style="color:var(--muted)">Explore our program tracks and short courses.</p>
+      </section>
+
+      <section class="card section-fade">
+        <div class="filters">
+          <button class="filter-btn" data-cat="all">All</button>
+          <button class="filter-btn" data-cat="stem">STEM</button>
+          <button class="filter-btn" data-cat="arts">Arts</button>
+          <button class="filter-btn" data-cat="business">Business</button>
+        </div>
+
+        <div class="course-grid">
+          <div class="course stem"><h4>Mathematics</h4><p style="color:var(--muted)">Core math for reasoning and problem solving.</p></div>
+          <div class="course arts"><h4>Visual Arts</h4><p style="color:var(--muted)">Creative expression and portfolio building.</p></div>
+          <div class="course business"><h4>Entrepreneurship</h4><p style="color:var(--muted)">Business basics and project-based learning.</p></div>
+          <div class="course stem"><h4>Science Lab</h4><p style="color:var(--muted)">Hands-on experiments and inquiry.</p></div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div>&copy; Nob Academy</div>
+      <div style="color:var(--muted)">info@nobacademy.edu</div>
+    </footer>
+  </div>
+<script src="js/main.js"></script>
+</body>
+</html>

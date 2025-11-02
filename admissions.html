@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Nob Academy — Admissions</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="site">
+    <header class="site-header">
+      <div class="brand">Nob Academy</div>
+      <nav class="main-nav" aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="admissions.html" style="text-decoration:underline">Admissions</a>
+        <a href="academics.html">Academics</a>
+        <a href="courses.html">Courses</a>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false">☰</button>
+    </header>
+
+    <main>
+      <section class="hero card section-fade">
+        <h1 style="font-family:Merriweather,serif;color:var(--burgundy);margin:0">Join Nob Academy</h1>
+        <p class="lead" style="color:var(--muted)">Start your admissions journey with us.</p>
+        <a class="btn" href="#apply">Apply Now</a>
+      </section>
+
+      <section class="card section-fade">
+        <h2 style="font-family:Merriweather,serif;color:var(--burgundy)">Admissions Process</h2>
+        <div class="timeline">
+          <div class="step"><div class="badge">1</div><div><strong>Inquiry</strong><p style="color:var(--muted)">Contact the admissions office.</p></div></div>
+          <div class="step"><div class="badge">2</div><div><strong>Assessment</strong><p style="color:var(--muted)">Entrance assessment as required.</p></div></div>
+          <div class="step"><div class="badge">3</div><div><strong>Acceptance</strong><p style="color:var(--muted)">Offer and enrolment steps.</p></div></div>
+        </div>
+      </section>
+
+      <section class="card" id="apply">
+        <h2 style="font-family:Merriweather,serif;color:var(--burgundy)">Online Application</h2>
+        <form onsubmit="event.preventDefault(); alert('Application submitted (mock)');" style="margin-top:12px;display:grid;gap:10px">
+          <input required name="name" placeholder="Full name" style="padding:10px;border-radius:8px;border:1px solid #eee">
+          <input required name="email" type="email" placeholder="Email" style="padding:10px;border-radius:8px;border:1px solid #eee">
+          <select name="grade" style="padding:10px;border-radius:8px;border:1px solid #eee">
+            <option value="">Select grade level</option>
+            <option>Primary</option><option>Junior High</option><option>Senior High</option>
+          </select>
+          <textarea name="message" placeholder="Tell us about your child (optional)" style="padding:10px;border-radius:8px;border:1px solid #eee"></textarea>
+          <button class="btn" type="submit">Submit Application</button>
+        </form>
+      </section>
+
+      <section class="card section-fade">
+        <h2 style="font-family:Merriweather,serif;color:var(--burgundy)">FAQ</h2>
+        <div class="faq">
+          <div class="q">What are the admission requirements?</div>
+          <div class="a">Provide previous reports, birth certificate, and completed application.</div>
+          <div class="q">Do you offer scholarships?</div>
+          <div class="a">Yes — limited scholarships are available based on merit.</div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div>&copy; Nob Academy</div>
+      <div style="color:var(--muted)">admissions@nobacademy.edu</div>
+    </footer>
+  </div>
+<script src="js/main.js"></script>
+</body>
+</html>
